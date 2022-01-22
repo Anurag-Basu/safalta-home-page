@@ -16,15 +16,67 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
+
+
 <body class="contianer-fluid">
-
-
     <!-- Hamburger Icon -->
-    
 
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
+
+            <div class="  offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+                <div class="offcanvas-header">
+                    <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">Menu</h6>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body px-0">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-truncate">
+                                <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+                                <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-truncate">
+                                <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle  text-truncate" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fs-5 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline">Bootstrap</span>
+                            </a>
+                            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdown">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-truncate">
+                                <i class="fs-5 bi-grid"></i><span class="ms-1 d-none d-sm-inline">Products</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-truncate">
+                                <i class="fs-5 bi-people"></i><span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+                        <button class="btn nav-menu float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                            <i class="fas fa-hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+                        </button>
+        
+
+            
             <img class="logo-img" src="./logo.svg" alt="Logo">
             <div id="nav-content">
                 <div class="nav-search d-inline-block">
@@ -48,9 +100,9 @@
     <div>
 
 
-                <!-- CATEGORY -->
+        <!-- CATEGORY -->
 
-        <div class=" category scrollY container-fluid bg-sucess d-flex justify-content-center ">
+        <div class=" category scrollY container bg-sucess d-flex justify-content-center ">
             <div class="d-flex flex-column align-items-center">
                 <img src="./img/1.jpg">
                 <p class="text-center ">CURRENT <br> AFFAIRS</p>
@@ -150,7 +202,7 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
@@ -160,7 +212,7 @@
         </button>
     </div>
 
-        <!-- TEST YOUR PREPARATION   -->
+    <!-- TEST YOUR PREPARATION   -->
     <div class="container m-top">
         <h3>Test Your Preparation <span class="text-danger fs-6">View all</span></h3>
         <div class="cats d-flex m-top m-bottom">
@@ -176,7 +228,7 @@
     </div>
     </div>
 
-        <!-- POPULAR COURSES -->
+    <!-- POPULAR COURSES -->
     <div class="container m-top ">
         <h3>Popular Courses</h3>
         <div class="d-flex container scrollY">
@@ -343,7 +395,7 @@
     </div>
 
 
-            <!--    FREE COURSES -->
+    <!--    FREE COURSES -->
     <div class="container  m-top ">
         <h3>Free Courses <span class="text-danger fs-6">View all</span></h3>
         <div class="d-flex container scrollY  live-class">
@@ -644,9 +696,9 @@
         </div>
     </div>
 
-        <!-- DAILY CONTENT -->
-    <div class="container m-top  shadow">
-        <div class="container d-flex features justify-content-between align-items-center">
+    <!-- DAILY CONTENT -->
+    <div class="container m-top">
+        <div class=" d-flex features justify-content-between align-items-center">
             <div class="d-flex feature align-items-center justify-content-center">
                 <span> <img src="./img/icon1.png" alt=""> </span>
                 <h5 class="m-left">Daily Current Affairs</h5>
@@ -670,7 +722,7 @@
     <!-- SAFALTA TALKS -->
     <div class="container m-top">
         <h3 class="m-bottom">Safalta Talks</h3>
-        <div class=" container scrollY d-flex flex-row most-watched">
+        <div class="safalta-talks container scrollY d-flex flex-row most-watched">
             <div class="child10"> <i class="far fa-play-circle"></i>
                 <h5>How I Claimed The Everest <br> Lt Col Romil Barthwal.</h5>
             </div>
@@ -693,7 +745,7 @@
     <!-- Free SSC MTS & GD Course -->
     <div class="container m-top">
         <h3>Free SSC MTS & GD Course <span class="text-danger fs-6">View all</span></h3>
-        <div class="free-ssc container d-flex justify-content-center align-items-center justify-content-lg-around">
+        <div class="free-ssc d-flex justify-content-between align-items-center ">
             <div class="d-flex flex-column">
                 <span><img src="./img/gd.png" alt=""></span>
                 <span class="fs-big">50K+</span>
@@ -718,100 +770,127 @@
     </div>
 
 
-            <!-- FROM THE STUDENTS -->
+    <!-- FROM THE STUDENTS -->
     <div class="container-fluid m-top Bg-grey">
         <div class="container">
             <h3 class="from-students"><span><img src="./img/chat.png" alt=""></span> From the Students <button
                     class="view-btn text-danger fs-6">View all</button></h3>
-        <div class=" user-feedback scrollY container d-flex flex-row justify-content-between ">
-            <div class="feedback">
-                <div class="user d-flex flex-column align-items-center">
-                    <img src="./img/ayush.jpg">
-                    <span class="text-sm"><strong>Ayush Verma</strong></span>
-                    <span class="Fs-12">NEET one year course</span>
-                </div>
-                <div class="description Fs-12">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci perferendis
-                    aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut amet id,
-                    veritatis minus possimus!
-                    Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga aspernatur
-                    hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit inventore
-                    sit magni.
-                    Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
-                    necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque aperiam amet
-                    aspernatur eaque ad architecto.
-                    Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum error
-                    similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex temporibus
-                    est cumque?
-                </div>
-            </div>
+            <div class="scrollY">
+                <div class=" user-feedback  container d-flex flex-row justify-content-between ">
+                    <div class="feedback">
+                        <div class="user d-flex flex-column align-items-center">
+                            <img src="./img/ayush.jpg">
+                            <span class="text-sm"><strong>Ayush Verma</strong></span>
+                            <span class="Fs-12">NEET one year course</span>
+                        </div>
+                        <div class="description Fs-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci
+                            perferendis
+                            aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut
+                            amet id,
+                            veritatis minus possimus!
+                            Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga
+                            aspernatur
+                            hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit
+                            inventore
+                            sit magni.
+                            Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
+                            necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque
+                            aperiam amet
+                            aspernatur eaque ad architecto.
+                            Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum
+                            error
+                            similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex
+                            temporibus
+                            est cumque?
+                        </div>
+                    </div>
 
-            <div class="feedback">
-                <div class="user d-flex flex-column align-items-center">
-                    <img src="./img/priyanka.jpg">
-                    <span class="text-sm"><strong>Priyanks</strong></span>
-                    <span class="Fs-12">SSC CHSL Selection Batch</span>
-                </div>
-                <div class="description Fs-12">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci perferendis
-                    aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut amet id,
-                    veritatis minus possimus!
-                    Ab sunt alias quaerat porro earum adipisci neque quos laboriosam. laborum modi velit fuga aspernatur
-                    hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit inventore
-                    sit magni.
-                </div>
-            </div>
+                    <div class="feedback">
+                        <div class="user d-flex flex-column align-items-center">
+                            <img src="./img/priyanka.jpg">
+                            <span class="text-sm"><strong>Priyanks</strong></span>
+                            <span class="Fs-12">SSC CHSL Selection Batch</span>
+                        </div>
+                        <div class="description Fs-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci
+                            perferendis
+                            aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut
+                            amet id,
+                            veritatis minus possimus!
+                            Ab sunt alias quaerat porro earum adipisci neque quos laboriosam. laborum modi velit fuga
+                            aspernatur
+                            hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit
+                            inventore
+                            sit magni.
+                        </div>
+                    </div>
 
-            <div class="feedback">
-                <div class="user d-flex flex-column align-items-center">
-                    <img src="./img/divanshu.jpeg">
-                    <span class="text-sm"><strong>Devanshu</strong></span>
-                    <span class="Fs-12">CDS Course</span>
-                </div>
-                <div class="description Fs-12">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci perferendis
-                    aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut amet id,
-                    veritatis minus possimus!
-                    Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga aspernatur
-                    hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit inventore
-                    sit magni.
-                    Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
-                    necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque aperiam amet
-                    aspernatur eaque ad architecto.
-                    Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum error
-                    similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex temporibus
-                    est cumque?
-                </div>
-            </div>
+                    <div class="feedback">
+                        <div class="user d-flex flex-column align-items-center">
+                            <img src="./img/divanshu.jpeg">
+                            <span class="text-sm"><strong>Devanshu</strong></span>
+                            <span class="Fs-12">CDS Course</span>
+                        </div>
+                        <div class="description Fs-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci
+                            perferendis
+                            aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut
+                            amet id,
+                            veritatis minus possimus!
+                            Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga
+                            aspernatur
+                            hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit
+                            inventore
+                            sit magni.
+                            Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
+                            necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque
+                            aperiam amet
+                            aspernatur eaque ad architecto.
+                            Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum
+                            error
+                            similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex
+                            temporibus
+                            est cumque?
+                        </div>
+                    </div>
 
-            <div class="feedback">
-                <div class="user d-flex flex-column align-items-center">
-                    <img src="./img/Ankit.png">
-                    <span class="text-sm"><strong>Ankit Kumar</strong></span>
-                    <span class="Fs-12">IIT JEE MAIN 2021</span>
-                </div>
-                <div class="description Fs-12">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci perferendis
-                    aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut amet id,
-                    veritatis minus possimus!
-                    Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga aspernatur
-                    hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit inventore
-                    sit magni.
-                    Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
-                    necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque aperiam amet
-                    aspernatur eaque ad architecto.
-                    Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum error
-                    similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex temporibus
-                    est cumque?
+                    <div class="feedback">
+                        <div class="user d-flex flex-column align-items-center">
+                            <img src="./img/Ankit.png">
+                            <span class="text-sm"><strong>Ankit Kumar</strong></span>
+                            <span class="Fs-12">IIT JEE MAIN 2021</span>
+                        </div>
+                        <div class="description Fs-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci
+                            perferendis
+                            aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut
+                            amet id,
+                            veritatis minus possimus!
+                            Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga
+                            aspernatur
+                            hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit
+                            inventore
+                            sit magni.
+                            Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
+                            necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque
+                            aperiam amet
+                            aspernatur eaque ad architecto.
+                            Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum
+                            error
+                            similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex
+                            temporibus
+                            est cumque?
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
-        <!--    TEST YOUR PREPARATION -->
+    <!--    TEST YOUR PREPARATION -->
     <div class="contianer-fluid m-top">
         <div class="container d-flex justify-content-between">
             <div class="text d-flex flex-column">
@@ -833,7 +912,7 @@
         </div>
     </div>
 
-        <!-- JOB ALERTS -->
+    <!-- JOB ALERTS -->
     <div class="container-fluid m-top Bg-grey">
         <div class="job-alert container  m-top d-flex justify-content-between align-items-center">
             <div>
@@ -1036,7 +1115,7 @@
                     <h2 class="text-center">Download Our App</h2>
                     <h5 class="Fs-grey fw-normal">Learn from your mobile Anytime Anywhere.</h5>
                 </span>
-                <img src="./img/gPlay.png" >
+                <img src="./img/gPlay.png">
             </div>
 
             <div class="course-container container d-flex flex-row justify-content-around">
@@ -1111,14 +1190,23 @@
         </div>
 
         <div class="about-link Fs-12 d-flex flex-row justify-content-around Fs-grey">
-            <span > About Us | Privacy | Contact Us | Terms and Conditions | Disclaimer | RSS Feeds | Sitemap | Important Information            </span>            
-            <span>© 2021-22 Safalta.com</span>
+            <div> About Us | Privacy | Contact Us | Terms and Conditions | Disclaimer | RSS Feeds | Sitemap | Important
+                Information </div>
+            <div>© 2021-22 Safalta.com</div>
         </div>
-
     </div>
 
+    <footer class="footer container-fluid d-flex justify-content-around text-center  ">
 
+        <span class="d-flex flex-column Fs-grey "><i class="fas fa-home text-danger"></i> Home</span>
+        <span class="d-flex flex-column Fs-grey "><i class="fas fa-search"></i> Search</span>
+        <span class="d-flex flex-column Fs-grey "><i class="fas fa-address-book"></i> Course</span>
+        <span class="d-flex flex-column Fs-grey "><i class="fas fa-user"></i> User</span>
+    </footer>
 
+    <div class="whatsapp">
+        <img src="./img/whatsapp.svg" alt="">
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

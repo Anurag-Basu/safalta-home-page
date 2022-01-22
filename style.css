@@ -5,7 +5,10 @@
 body{
     overflow-x: hidden;
 }
-
+.nav-menu{
+    margin-left: 6rem;
+    font-size: 1.5rem;  
+}
 /* NAV BAR */
 nav{
     border-bottom: 2px solid black;
@@ -19,7 +22,7 @@ nav{
 .logo-img{
     height: 50px;
     width: 150px;
-
+    margin-left: -40rem;
 }
 .icon{
     height: 50px;
@@ -106,6 +109,22 @@ nav{
 
 .m-bottom{
     margin-bottom: 1rem;
+}
+
+/* carousel */
+.carousel-control-prev,
+.carousel-control-next{
+    height: 6vh;
+    width: 6vh;
+    opacity: 1;
+    position: absolute;
+    top: 48%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 6rem;
+    margin-right: 6rem;
+
 }
 
     /* POPULAR COURSES */
@@ -213,7 +232,9 @@ nav{
 }
 
 /* DAILY CONTENT (FEATURES) */
-
+.features{
+    margin: 3rem 0;
+}
 
 .feature{
     padding-right: 1rem;
@@ -237,12 +258,12 @@ nav{
 
 .safalta-talks div{
     object-fit: cover;
-    color: black;
     background-image: red;
+    font-weight: bolder;
 }
 
 .safalta-talks div i{
-    color: red;
+    color: red !important;
     opacity: 1;
     font-size: 2.5rem;
 }
@@ -267,9 +288,11 @@ nav{
 
 .free-ssc{
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 .free-ssc div{
-    min-width: 250px;
+    min-width: 190px;
+    margin: 1rem;
 }
 .free-ssc span{
     text-align: center;
@@ -311,7 +334,6 @@ nav{
 
 .user{
     margin: -85px auto 10px;
-    background-color: red;
 }
 
 .user img{
@@ -345,6 +367,8 @@ nav{
     margin: .5rem;
 }
 .cats span{
+    display: inline-block;
+    margin-bottom: .5rem;
     background-color: red;
     color: white;
     padding: 4px 12px;
@@ -498,8 +522,28 @@ nav{
 }
 
 
+/* footer */
+.footer{
+    border-top: 1px solid #b5b5b5;
+    padding-top: .5rem;
+    font-size: 12px;
+    box-shadow: 5px 2px 4px rgb(0 0 0 / 25%);
+    display: none;
+}
+.footer span i{
+    font-size: 20px;
+}
+
+/* whatsapp */
+.whatsapp{
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    display: none;
+}
+
         /* MEDIA QUERY FO 900px */
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 992px){
    
     h3{
         font-size: 18px !important;
@@ -511,12 +555,20 @@ nav{
         padding-bottom: 0;
         margin-top: .5em;
     }
+    .nav-menu {
+        margin-left: 2rem;
+    }
+
+    .logo-img {
+        margin-left: -20rem;
+    }
     .scrollY
     {
         overflow-x: scroll;
         overflow-y: hidden;
     }
 
+    
     .scrollY::-webkit-scrollbar
     {
         display: none;
@@ -539,24 +591,25 @@ nav{
     .cats div{
         word-wrap: unset;
         font-size: 14px;
+        margin-bottom: 1rem;
 
     }
      /* FEATURES  */
      .features{
          display: flex;
          flex-wrap: wrap;
-         flex-direction: row;
-         
-     }
-        /* FREE SSC MTS & GD COURSE */
-    .free-ssc div{
-        /* background-color: red;
-        margin: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row; */
+         /* width: 120; */
+         justify-content: unset;
+}
+.feature{
+    margin-bottom: 3rem;
 
-    }
+}
+
+     .feature h5{
+        font-size: 14px;
+     }
+ 
   /* FROM THE STUDENTS */
  
   .feedback{
@@ -574,4 +627,49 @@ nav{
       display: none !important;
   }
 
+  /* subscribe for job alerts */
+  .job-alert button{
+      width: 18rem;
+      margin-top: .2rem;
+      margin-left: 0;
+  }
+
+  .about-link{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+  }
+
+  .footer{
+      display: flex;
+
+  }
+
+  .whatsapp{
+      display: block;
+  }
+
+  .carousel-control-prev,
+.carousel-control-next{
+    top: 36%;
+}
+
+}
+@media only screen and (max-width: 576px){
+    .nav-menu {
+        margin-left: 0rem;
+    }
+    .logo-img {
+        margin-left: -6rem;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        top: 31%;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
