@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+/* NAV BAR */
 nav{
     border-bottom: 2px solid black;
     margin-bottom: .5rem;
@@ -63,6 +68,8 @@ nav{
     top: 5px;
 }
 
+    /* CATEGORY */
+
 .category{
     flex-direction: col;
 }
@@ -77,15 +84,12 @@ nav{
     
 }
 
-
 .cats div{
     border-radius: 10px;
-    background-color: #b5b5b5;
-    /* font-weight: bold; */
+    background-color: #EEEFF4;
     margin: 0 .5rem;
-    padding: 0 10px;
+    padding: 4px;
 }
-
 
 .cats div:hover{
     background-color: red;
@@ -96,16 +100,21 @@ nav{
 .m-top{
     margin-top: 1rem;
 }
+.m-left{
+    margin-left: 1rem;
+}
 
 .m-bottom{
     margin-bottom: 1rem;
 }
+
+    /* POPULAR COURSES */
 .best-seller-card{
-    height: 180px;
+    min-width: 255px;
     width: 255px;
-    background-color: cyan;
     border-radius: 15px;
     margin-right: 8px;
+    box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
 }
 
 .best-seller{
@@ -114,6 +123,9 @@ nav{
     border-radius: 5px;
 }
 
+.Bg-grey{
+    background-color: #EEEFF4;
+}
 .m-t-2{
     margin-top: 2px;
 }
@@ -138,15 +150,428 @@ nav{
 .buy{
     border-radius: 15px;
 }
-
+        /* FREE STUDY MATERIAL */
 .pdf div{
-    padding: 3px 5px;
+    min-width: 250px;
+    margin: auto 1px;
+    padding: 6px 8px;
     margin-right: 2rem;
-    background-color: rgb(167, 166, 166);
+    background-color: #EEEFF4;
     border: 1px solid red;
 }
 
 .download{
     margin-left: 8px;
     color: limegreen;
+}
+
+/* MOST WATCHED VIDEOS */
+.most-watched div{
+    position: relative;
+    height: 180px;
+    width: 255px;
+    min-width: 255px;
+    border-radius: 15px;
+    margin-right: 8px;
+    color: white;
+    object-fit: contain;
+
+}
+.most-watched div h5{
+    position: absolute;
+    bottom: 1px;
+    left: 15px;
+}
+.most-watched div i{
+    font-size: 2rem;
+    opacity: .7;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+.child1{
+    background-image: url('./img/mw1.jpeg');
+}
+
+.child2{
+    background-image: url('./img/mw-2.jpeg');
+}
+.child3{
+    background-image: url('./img/mw3.jpeg');
+}
+.child4{
+    background-image: url('./img/mw4.jpeg');
+}
+.child5{
+    background-image: url('./img/mw5.jpeg');
+}
+
+/* LIVE CLASS */
+.live-class {
+    height: 160px !important;
+    
+}
+
+/* DAILY CONTENT (FEATURES) */
+
+
+.feature{
+    padding-right: 1rem;
+    padding: 4px;
+    min-width: 120px;
+    box-shadow: 2px 4px 2px 3px #b5b5b5 ; 
+}
+
+.feature img{
+    height: 50px;
+    width: 50px;
+    left: 2px;
+    position: relative;
+}
+
+.shadow{
+    margin-top: 3rem;
+}
+
+/* SAFALTA TALKS */
+
+.safalta-talks div{
+    object-fit: cover;
+    color: black;
+    background-image: red;
+}
+
+.safalta-talks div i{
+    color: red;
+    opacity: 1;
+    font-size: 2.5rem;
+}
+.child10{
+    background-image: url(./img/st1.jpeg);
+}
+.child11{
+    background-image: url(./img/st2.jpeg);
+}
+.child12{
+    background-image: url(./img/st3.jpeg);
+}
+.child13{
+    background-image: url(./img/st4.jpeg);
+}
+.child14{
+    background-image: url(./img/st5.png);
+}
+
+
+/* FRE SSC MTS & GD COURSE */
+
+.free-ssc{
+    margin-top: 2rem;
+}
+.free-ssc div{
+    min-width: 250px;
+}
+.free-ssc span{
+    text-align: center;
+}
+
+.fs-big{
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+}
+
+
+/* FROM THE STUDENTS */
+.from-students{
+    position: relative;
+    top: 2rem;
+}
+.view-btn{
+    background-color: #FFDCDD;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+.user-feedback{
+    margin-top: 8rem;
+}
+.feedback{
+    position: relative;
+    min-width: 250px;
+    width: 250px;
+    height: 365px;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+
+.user{
+    margin: -85px auto 10px;
+    background-color: red;
+}
+
+.user img{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+}
+
+.description{
+   
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: justify;
+    color: #555;
+    padding: 10px;
+    height: 245px;
+    overflow: hidden;
+}
+
+.description:hover{
+    overflow-y: scroll;
+}
+
+/* TEST YOUR PREPARATION */
+
+.text{
+    color: #555;
+}
+.cats{
+    margin: .5rem;
+}
+.cats span{
+    background-color: red;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 10px;
+    margin-right: .5rem;
+    font-size: .9rem;
+}
+
+/* SUBSCRIBE FOR FREE JOB ALERTS */
+
+.job-alert img{
+    margin: 3rem 0;
+    height: 150px;
+    left: -2rem;
+    position: relative;
+}
+.job-alert input{
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 18rem;
+}
+.job-alert button{
+    border-radius: 5px;
+    padding: 4px 25px;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+/* teaching experts */
+.justify{
+    text-align: justify;
+    line-height: 16px !important;
+}
+.faculty-card {
+    padding: 1rem;
+    width: 330px;
+    min-width: 330px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+.faculty-content{
+    border-bottom: 1px solid #555;
+}
+.faculty-card img{
+    height: 85px;
+    width: 85px;
+    margin: auto 2px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+}
+
+/*  GUIDE */
+.guide-card{
+    padding: 5px;
+    min-width: 250px;
+    width: 300px !important;
+    border: 1px solid #555;
+    position: relative;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+.guide-card img{
+    width: 98%;
+    margin-bottom: 1rem;
+}
+
+.guide-read-more{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+.Fs-grey{
+    color: #555;
+}
+
+/* FREE VIDEOS */
+.free-videos i{
+    color: red;
+    font-size: 2.5rem !important;
+}
+.child20{
+    background-image: url('./img/fw1.jpeg');
+}
+
+.child21{
+    background-image: url('./img/fw2.jpeg');
+}
+
+.child22{
+    background-image: url('./img/fw3.jpeg');
+}
+
+.child23{
+    background-image: url('./img/fw4.jpeg');
+}
+
+.child24{
+    background-image: url('./img/fw5.jpeg');
+}
+
+.divider{
+    border:  5px solid red;
+    background-color: red;
+    opacity: 1;
+}
+/* TRENDING COURSES */
+
+.download-app{
+    margin: 3rem;
+}
+.course-container{
+
+    margin-top: 2rem;
+}
+.courses ul{
+    list-style: none;
+    margin-left: -2rem;
+}
+
+/* ABOUT US */
+.about{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+.about img{
+    width: 250px;
+}
+
+
+.about input{
+    padding: 3px 10px;
+    width: 300px;
+    border-color: #f5f5f5;
+}
+.about input::placeholder{
+    color: #b5b5b5;
+}
+.about button{
+    padding: 3px 10px;
+    position: relative;
+    left: -5px;
+}
+
+
+        /* MEDIA QUERY FO 900px */
+@media only screen and (max-width: 900px){
+   
+    h3{
+        font-size: 18px !important;
+    }
+    /* NAV BAR */
+    .nav-search{
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: .5em;
+    }
+    .scrollY
+    {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .scrollY::-webkit-scrollbar
+    {
+        display: none;
+    }
+    .category p{
+        font-size: 10px;
+    }
+    .social{
+        display: none !important;
+    }
+    #search-box{
+        display: none;
+    }
+
+    /* TEST YOUR PREPARATION */
+    .cats{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cats div{
+        word-wrap: unset;
+        font-size: 14px;
+
+    }
+     /* FEATURES  */
+     .features{
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         
+     }
+        /* FREE SSC MTS & GD COURSE */
+    .free-ssc div{
+        /* background-color: red;
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; */
+
+    }
+  /* FROM THE STUDENTS */
+ 
+  .feedback{
+      height: 250px;
+  }
+  .description{
+      height: 150px;
+  }
+  /* TEST YOU PREPARTION */
+
+
+  /* DOWNLOAD OUT APP */
+  .download-app,
+  .hiring{
+      display: none !important;
+  }
+
 }

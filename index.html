@@ -19,7 +19,8 @@
 <body class="contianer-fluid">
 
 
-
+    <!-- Hamburger Icon -->
+    
 
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-light">
@@ -27,15 +28,16 @@
             <img class="logo-img" src="./logo.svg" alt="Logo">
             <div id="nav-content">
                 <div class="nav-search d-inline-block">
-                    <i class="fas fa-question "></i>
-                    <i class="fas fa-bell bell"></i>
+                    <i class="fas fa-search Fs-14 Fs-grey"></i>
+                    <i class="fas fa-question Fs-grey"></i>
+                    <i class="fas fa-bell bell Fs-grey"></i>
                     <span id="search-box">
                         <i class="fas fa-search"></i>
                         <input type="Seach here" placeholder="Search your topics">
                     </span>
                     <i class="far fa-user user rounded-circle text-light bg-danger "></i>
                 </div>
-                <div class="d-inline-block  ">
+                <div class=" d-inline-block social ">
                     <i class="fab fa-facebook-f text-danger"></i>
                     <i class="fab fa-youtube text-danger "></i>
                     <i class="fab fa-twitter text-danger"></i>
@@ -44,7 +46,11 @@
         </div>
     </nav>
     <div>
-        <div class="container-fluid bg-sucess d-flex justify-content-center category">
+
+
+                <!-- CATEGORY -->
+
+        <div class=" category scrollY container-fluid bg-sucess d-flex justify-content-center ">
             <div class="d-flex flex-column align-items-center">
                 <img src="./img/1.jpg">
                 <p class="text-center ">CURRENT <br> AFFAIRS</p>
@@ -59,7 +65,24 @@
 
             <div class="d-flex flex-column align-items-center">
                 <img src="./img/5.jpg">
-                <p class="text-center ">SCHOOL</p>
+                <p class="text-center">SCHOOL</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <img src="./img/1.jpg">
+                <p class="text-center  ">CURRENT <br> AFFAIRS</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <img src="./img/2.jpg">
+                <p class="text-center ">MOCK TEST <br>
+                    <span class=" bg-danger text-light px-2">Live</span>
+                </p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <img src="./img/5.jpg">
+                <p class="text-center">SCHOOL</p>
             </div>
 
             <div class="d-flex flex-column align-items-center">
@@ -96,6 +119,8 @@
                 <p class="text-center ">UP POLICE</p>
             </div>
         </div>
+
+        <!-- CAROUSEL -->
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -135,6 +160,7 @@
         </button>
     </div>
 
+        <!-- TEST YOUR PREPARATION   -->
     <div class="container m-top">
         <h3>Test Your Preparation <span class="text-danger fs-6">View all</span></h3>
         <div class="cats d-flex m-top m-bottom">
@@ -150,10 +176,10 @@
     </div>
     </div>
 
-
-    <div class="container  m-top ">
-        <h3>Popular Courses <span class="text-danger fs-6">View all</span></h3>
-        <div class="d-flex container">
+        <!-- POPULAR COURSES -->
+    <div class="container m-top ">
+        <h3>Popular Courses</h3>
+        <div class="d-flex container scrollY">
             <div class="best-seller-card">
                 <div class="d-flex justify-content-between container"> <span
                         class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
@@ -290,32 +316,65 @@
             </div>
         </div>
     </div>
+
+    <!-- FREE STUDY MATERIAL -->
 
     <div class="container m-top">
         <h3>Free Study Materials <span class="text-danger fs-6">View all</span></h3>
         <span>E-Books, Prev. Years Question Papers</span>
-        <div class="container d-flex pdf">
+        <div class=" container d-flex scrollY pdf">
             <div class="d-flex justify-content-between">
-                <span class="Fs-14">Yearly Current Affairs  2022 PDF in Hindi</span> <span><i class="fas fa-download download"></i></span>
+                <span class="Fs-14">Yearly Current Affairs 2022 PDF in Hindi</span> <span><i
+                        class="fas fa-download download"></i></span>
             </div>
             <div class="d-flex justify-content-between">
-                <span class="Fs-14">Free UPSSSC Lekhpal Village Development Free E book</span> <span><i class="fas fa-download download"></i></span>
+                <span class="Fs-14">Free UPSSSC Lekhpal Village Development Free E book</span> <span><i
+                        class="fas fa-download download"></i></span>
             </div>
             <div class="d-flex justify-content-between">
-                <span class="Fs-14">NDA Mathematics Complete Study Material Hindi Edition</span> <span><i class="fas fa-download download"></i></span>
+                <span class="Fs-14">NDA Mathematics Complete Study Material Hindi Edition</span> <span><i
+                        class="fas fa-download download"></i></span>
             </div>
             <div class="d-flex justify-content-between">
-                <span class="Fs-14">Free RRB NTPC  CBT 2 Previous Year Papers</span> <span><i class="fas fa-download download"></i></span>
+                <span class="Fs-14">Free RRB NTPC CBT 2 Previous Year Papers</span> <span><i
+                        class="fas fa-download download"></i></span>
             </div>
         </div>
     </div>
 
 
-
+            <!--    FREE COURSES -->
     <div class="container  m-top ">
         <h3>Free Courses <span class="text-danger fs-6">View all</span></h3>
-        <div class="d-flex container">
+        <div class="d-flex container scrollY  live-class">
             <div class="best-seller-card">
+                <div class="d-flex justify-content-between container"> <span
+                        class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
+                        class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
+                <div class="container"> <span class="fw-bold">NDA 2022(1) Champion</span> <br> <span
+                        class="fw-bold">BATCH:
+                        Enroll in live
+                        class by...</span> </div>
+                <div class="container stars">
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <span class="Fs-12"> <strong>4.9</strong>/5 </span>
+                </div>
+                <div class="d-flex justify-content-between container">
+                    <span class="Fs-10 ">Life Time</span>
+                    <span class="Fs-10 ">Study Materials</span>
+                    <span class="Fs-10">Mock Test</span>
+                </div>
+                <div class="container d-flex flex-column bg-danger text-light buy-now">
+                    <span class="Fs-14"> Buy Now @ ₹ 2999 <span class="strike">₹ 10999</span> 72% off</span>
+                    <button class="buy">Subscribe Now</button>
+                </div>
+            </div>
+
+            <div class="best-seller-card live-class">
                 <div class="d-flex justify-content-between container"> <span
                         class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
                         class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
@@ -369,7 +428,7 @@
                 </div>
             </div>
 
-            <div class="best-seller-card">
+            <div class="best-seller-card live-class">
                 <div class="d-flex justify-content-between container"> <span
                         class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
                         class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
@@ -396,34 +455,7 @@
                 </div>
             </div>
 
-            <div class="best-seller-card">
-                <div class="d-flex justify-content-between container"> <span
-                        class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
-                        class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
-                <div class="container"> <span class="fw-bold">NDA 2022(1) Champion</span> <br> <span
-                        class="fw-bold">BATCH:
-                        Enroll in live
-                        class by...</span> </div>
-                <div class="container stars">
-                    <i class="fas fa-star text-danger Fs-12"></i>
-                    <i class="fas fa-star text-danger Fs-12"></i>
-                    <i class="fas fa-star text-danger Fs-12"></i>
-                    <i class="fas fa-star text-danger Fs-12"></i>
-                    <i class="fas fa-star text-danger Fs-12"></i>
-                    <span class="Fs-12"> <strong>4.9</strong>/5 </span>
-                </div>
-                <div class="d-flex justify-content-between container">
-                    <span class="Fs-10 ">Life Time</span>
-                    <span class="Fs-10 ">Study Materials</span>
-                    <span class="Fs-10">Mock Test</span>
-                </div>
-                <div class="container d-flex flex-column bg-danger text-light buy-now">
-                    <span class="Fs-14"> Buy Now @ ₹ 2999 <span class="strike">₹ 10999</span> 72% off</span>
-                    <button class="buy">Subscribe Now</button>
-                </div>
-            </div>
-
-            <div class="best-seller-card">
+            <div class="best-seller-card live-class">
                 <div class="d-flex justify-content-between container"> <span
                         class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
                         class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
@@ -452,6 +484,638 @@
         </div>
     </div>
 
+
+    <!-- MOST WATCHED VIDEOS -->
+    <div class="container m-top ">
+        <h3 class="m-bottom">Most Watched Videos</h3>
+        <div class=" container d-flex flex-row scrollY most-watched">
+            <div class="child1"> <i class="far fa-play-circle"></i>
+                <h5>English-Grammer</h5>
+            </div>
+            <div class="child2"> <i class="far fa-play-circle"></i>
+                <h5>English-Passage,Para <br>jumbles, Cloze Test</h5>
+            </div>
+            <div class="child3"> <i class="far fa-play-circle"></i>
+                <h5>Maths-Trigonometry</h5>
+            </div>
+            <div class="child4"> <i class="far fa-play-circle"></i>
+                <h5>Maths-Advanced <br>Mathematics</h5>
+            </div>
+            <div class="child5"> <i class="far fa-play-circle"></i>
+                <h5>Hindi-Samaas</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- LIVE COURSES -->
+    <div class="container  m-top ">
+        <h3>Live Courses <span class="text-danger fs-6">View all</span></h3>
+        <div class="d-flex container scrollY">
+            <div class="best-seller-card live-class">
+                <div class="d-flex justify-content-between container"> <span
+                        class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
+                        class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
+                <div class="container"> <span class="fw-bold">10th Board Success</span> <br> <span
+                        class="fw-bold">Signature Program</span> </div>
+                <div class="container stars">
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <span class="Fs-12"> <strong>4.9</strong>/5 </span>
+                </div>
+                <div class="d-flex justify-content-between container">
+                    <span class="Fs-10 ">Life Time</span>
+                    <span class="Fs-10 ">Study Materials</span>
+                    <span class="Fs-10">Mock Test</span>
+                </div>
+                <div class="container d-flex flex-column bg-danger text-light buy-now">
+                    <span class="Fs-14"> Buy Now @ ₹ 2999 <span class="strike">₹ 10999</span> 72% off</span>
+                    <button class="buy">Subscribe Now</button>
+                </div>
+            </div>
+
+            <div class="best-seller-card live-class">
+                <div class="d-flex justify-content-between container"> <span
+                        class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
+                        class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
+                <div class="container"> <span class="fw-bold">10th Board Success</span> <br> <span
+                        class="fw-bold">Signature Program</span> </div>
+                <div class="container stars">
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <span class="Fs-12"> <strong>4.9</strong>/5 </span>
+                </div>
+                <div class="d-flex justify-content-between container">
+                    <span class="Fs-10 ">Life Time</span>
+                    <span class="Fs-10 ">Study Materials</span>
+                    <span class="Fs-10">Mock Test</span>
+                </div>
+                <div class="container d-flex flex-column bg-danger text-light buy-now">
+                    <span class="Fs-14"> Buy Now @ ₹ 2999 <span class="strike">₹ 10999</span> 72% off</span>
+                    <button class="buy">Subscribe Now</button>
+                </div>
+            </div>
+
+            <div class="best-seller-card live-class">
+                <div class="d-flex justify-content-between container"> <span
+                        class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
+                        class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
+                <div class="container"> <span class="fw-bold">SSC SarvottamBatch: Enroll</span> <br> <span
+                        class="fw-bold">
+                        in live class by Safalta</span> </div>
+                <div class="container stars">
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <span class="Fs-12"> <strong>4.9</strong>/5 </span>
+                </div>
+                <div class="d-flex justify-content-between container">
+                    <span class="Fs-10 ">Life Time</span>
+                    <span class="Fs-10 ">Study Materials</span>
+                    <span class="Fs-10">Mock Test</span>
+                </div>
+                <div class="container d-flex flex-column bg-danger text-light buy-now">
+                    <span class="Fs-14"> Buy Now @ ₹ 2999 <span class="strike">₹ 10999</span> 72% off</span>
+                    <button class="buy">Subscribe Now</button>
+                </div>
+            </div>
+
+            <div class="best-seller-card live-class">
+                <div class="d-flex justify-content-between container"> <span
+                        class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
+                        class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
+                <div class="container"> <span class="fw-bold">NDA 2022(1) Champion</span> <br> <span
+                        class="fw-bold">BATCH:
+                        Enroll in live
+                        clas....</span> </div>
+                <div class="container stars">
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <span class="Fs-12"> <strong>4.9</strong>/5 </span>
+                </div>
+                <div class="d-flex justify-content-between container">
+                    <span class="Fs-10 ">Life Time</span>
+                    <span class="Fs-10 ">Study Materials</span>
+                    <span class="Fs-10">Mock Test</span>
+                </div>
+                <div class="container d-flex flex-column bg-danger text-light buy-now">
+                    <span class="Fs-14"> Buy Now @ ₹ 2999 <span class="strike">₹ 10999</span> 72% off</span>
+                    <button class="buy">Subscribe Now</button>
+                </div>
+            </div>
+
+            <div class="best-seller-card live-class">
+                <div class="d-flex justify-content-between container"> <span
+                        class="Fs-10 d-inline-block best-seller m-t-2">Best Seller</span> <span
+                        class="Fs-10 d-inline-block m-t-2"> <i class="fas fa-users"></i> Online Course</span> </div>
+                <div class="container"> <span class="fw-bold">Up Police Constable Live</span> <br> <span
+                        class="fw-bold">Classes:
+                        Enroll in live
+                        clas...</span> </div>
+                <div class="container stars">
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <i class="fas fa-star text-danger Fs-12"></i>
+                    <span class="Fs-12"> <strong>4.9</strong>/5 </span>
+                </div>
+                <div class="d-flex justify-content-between container">
+                    <span class="Fs-10 ">Life Time</span>
+                    <span class="Fs-10 ">Study Materials</span>
+                    <span class="Fs-10">Mock Test</span>
+                </div>
+                <div class="container d-flex flex-column bg-danger text-light buy-now ">
+                    <span class="Fs-14"> Buy Now @ ₹ 2999 <span class="strike">₹ 10999</span> 72% off</span>
+                    <button class="buy">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- DAILY CONTENT -->
+    <div class="container m-top  shadow">
+        <div class="container d-flex features justify-content-between align-items-center">
+            <div class="d-flex feature align-items-center justify-content-center">
+                <span> <img src="./img/icon1.png" alt=""> </span>
+                <h5 class="m-left">Daily Current Affairs</h5>
+            </div>
+            <div class="d-flex feature align-items-center justify-content-between">
+                <span> <img src="./img/icon1.png" alt=""> </span>
+                <h5 class="m-left">Daily Current Affairs</h5>
+            </div>
+            <div class="d-flex feature align-items-center justify-content-center">
+                <span> <img src="./img/icon1.png" alt=""> </span>
+                <h5 class="m-left">Daily Current Affairs</h5>
+            </div>
+            <div class="d-flex feature align-items-center justify-content-center">
+                <span> <img src="./img/icon1.png" alt=""> </span>
+                <h5 class="m-left">Daily Current Affairs</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SAFALTA TALKS -->
+    <div class="container m-top">
+        <h3 class="m-bottom">Safalta Talks</h3>
+        <div class=" container scrollY d-flex flex-row most-watched">
+            <div class="child10"> <i class="far fa-play-circle"></i>
+                <h5>How I Claimed The Everest <br> Lt Col Romil Barthwal.</h5>
+            </div>
+            <div class="child11"> <i class="far fa-play-circle"></i>
+                <h5>English-Passage,Para <br>jumbles, Cloze Test</h5>
+            </div>
+            <div class="child12"> <i class="far fa-play-circle"></i>
+                <h5>How I become UPSC <br> Topper Without Joinin. </h5>
+            </div>
+            <div class="child13"> <i class="far fa-play-circle"></i>
+                <h5>Maths-Advanced <br>Mathematics</h5>
+            </div>
+            <div class="child14"> <i class="far fa-play-circle"></i>
+                <h5>Peek Into The Life of A <br> Social Enterpreneur... </h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Free SSC MTS & GD Course -->
+    <div class="container m-top">
+        <h3>Free SSC MTS & GD Course <span class="text-danger fs-6">View all</span></h3>
+        <div class="free-ssc container d-flex justify-content-center align-items-center justify-content-lg-around">
+            <div class="d-flex flex-column">
+                <span><img src="./img/gd.png" alt=""></span>
+                <span class="fs-big">50K+</span>
+                <span>Hrs. of Content</span>
+            </div>
+            <div class="d-flex flex-column">
+                <span><img src="./img/1m.png" alt=""></span>
+                <span class="fs-big">1M</span>
+                <span>E-books Subscription</span>
+            </div>
+            <div class="d-flex flex-column">
+                <span><img src="./img/100k.png" alt=""></span>
+                <span class="fs-big">100K+</span>
+                <span>Students Community</span>
+            </div>
+            <div class="d-flex flex-column">
+                <span><img src="./img/100kl.png" alt=""></span>
+                <span class="fs-big">100K+</span>
+                <span>Live Classes</span>
+            </div>
+        </div>
+    </div>
+
+
+            <!-- FROM THE STUDENTS -->
+    <div class="container-fluid m-top Bg-grey">
+        <div class="container">
+            <h3 class="from-students"><span><img src="./img/chat.png" alt=""></span> From the Students <button
+                    class="view-btn text-danger fs-6">View all</button></h3>
+        <div class=" user-feedback scrollY container d-flex flex-row justify-content-between ">
+            <div class="feedback">
+                <div class="user d-flex flex-column align-items-center">
+                    <img src="./img/ayush.jpg">
+                    <span class="text-sm"><strong>Ayush Verma</strong></span>
+                    <span class="Fs-12">NEET one year course</span>
+                </div>
+                <div class="description Fs-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci perferendis
+                    aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut amet id,
+                    veritatis minus possimus!
+                    Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga aspernatur
+                    hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit inventore
+                    sit magni.
+                    Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
+                    necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque aperiam amet
+                    aspernatur eaque ad architecto.
+                    Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum error
+                    similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex temporibus
+                    est cumque?
+                </div>
+            </div>
+
+            <div class="feedback">
+                <div class="user d-flex flex-column align-items-center">
+                    <img src="./img/priyanka.jpg">
+                    <span class="text-sm"><strong>Priyanks</strong></span>
+                    <span class="Fs-12">SSC CHSL Selection Batch</span>
+                </div>
+                <div class="description Fs-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci perferendis
+                    aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut amet id,
+                    veritatis minus possimus!
+                    Ab sunt alias quaerat porro earum adipisci neque quos laboriosam. laborum modi velit fuga aspernatur
+                    hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit inventore
+                    sit magni.
+                </div>
+            </div>
+
+            <div class="feedback">
+                <div class="user d-flex flex-column align-items-center">
+                    <img src="./img/divanshu.jpeg">
+                    <span class="text-sm"><strong>Devanshu</strong></span>
+                    <span class="Fs-12">CDS Course</span>
+                </div>
+                <div class="description Fs-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci perferendis
+                    aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut amet id,
+                    veritatis minus possimus!
+                    Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga aspernatur
+                    hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit inventore
+                    sit magni.
+                    Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
+                    necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque aperiam amet
+                    aspernatur eaque ad architecto.
+                    Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum error
+                    similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex temporibus
+                    est cumque?
+                </div>
+            </div>
+
+            <div class="feedback">
+                <div class="user d-flex flex-column align-items-center">
+                    <img src="./img/Ankit.png">
+                    <span class="text-sm"><strong>Ankit Kumar</strong></span>
+                    <span class="Fs-12">IIT JEE MAIN 2021</span>
+                </div>
+                <div class="description Fs-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum earum adipisci perferendis
+                    aliquid odio laboriosam beatae odit facere non ratione, impedit consectetur repellat aut amet id,
+                    veritatis minus possimus!
+                    Ab sunt alias quaerat porro earum adipisci neque quos laboriosam laborum modi velit fuga aspernatur
+                    hic voluptatibus mollitia, cum vel. Ipsam, illum repellendus. Recusandae debitis id fugit inventore
+                    sit magni.
+                    Quaerat quod optio non doloribus itaque libero, atque vel! Neque, minus culpa. Tempore
+                    necessitatibus laboriosam cupiditate magni, consectetur in omnis neque rerum iure atque aperiam amet
+                    aspernatur eaque ad architecto.
+                    Architecto impedit harum maxime tempora voluptatem dolorum odit assumenda ea sit sequi eum error
+                    similique, minus repudiandae! Aut nisi aliquam, repellat error amet at debitis natus, ex temporibus
+                    est cumque?
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!--    TEST YOUR PREPARATION -->
+    <div class="contianer-fluid m-top">
+        <div class="container d-flex justify-content-between">
+            <div class="text d-flex flex-column">
+                <h3 class="text-black">Test Your Preparation</h3>
+                <h3 class="fw-normal">Free Online Mock Tests For various</h3>
+                <h3 class="fw-normal">entrance exams in India</h3>
+                <div class="cats  ">
+                    <span>NDA</span>
+                    <span>IIT JEE</span>
+                    <span>IIBPS PO</span>
+                    <span>English </span>
+                    <span>Current Affairs</span>
+                    <span>CTET</span>
+                </div>
+            </div>
+            <div>
+                <img src="./img/preparation.png" alt="">
+            </div>
+        </div>
+    </div>
+
+        <!-- JOB ALERTS -->
+    <div class="container-fluid m-top Bg-grey">
+        <div class="job-alert container  m-top d-flex justify-content-between align-items-center">
+            <div>
+                <h3>Subscribe for free Job Alerts</h3>
+                <span><input type="text" placeholder="Enter Your Mobile"> <button
+                        class="bg-danger text-light">Submit</button> </span>
+            </div>
+            <div>
+                <img src="./img/jobalerts.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Teaching experts -->
+
+    <div class="container-fluid m-top Bg-grey">
+        <div class="container">
+            <h3>Teaching Experts</h3>
+
+            <div class="container d-flex scrollY felx-row">
+                <div class="faculty-card d-flex flex-column">
+                    <div class="d-flex flex-row faculty-content">
+                        <img src="./img/3.jpg" alt="">
+                        <div class="d-flex flex-column m-left">
+                            <h5>BHAGWATI PRASAD SIR</h5>
+                            <span class="Fs-10">M.phil, M.Sc, B.Ed</span>
+                            <span class="Fs-10">Quantitive Aptitude</span>
+                            <span class="Fs-10"><strong>20+ yeats of exp</strong></span>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <li class="Fs-12 justify"> Bhagwati Prasad Sir is a distinguished name in teaching
+                            Quantitative Aptitude. Sir himself had qualified for a government job at the Central
+                            Board
+                            of Indirect Taxes. It's his passion for making students realise their career.
+                        </li>
+                    </div>
+                </div>
+
+                <div class="faculty-card d-flex flex-column">
+                    <div class="d-flex flex-row faculty-content">
+                        <img src="./img/3.jpg" alt="">
+                        <div class="d-flex flex-column m-left">
+                            <h5>BHAGWATI PRASAD SIR</h5>
+                            <span class="Fs-10">M.phil, M.Sc, B.Ed</span>
+                            <span class="Fs-10">Quantitive Aptitude</span>
+                            <span class="Fs-10"><strong>20+ yeats of exp</strong></span>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <li class="Fs-12 justify"> Bhagwati Prasad Sir is a distinguished name in teaching
+                            Quantitative Aptitude. Sir himself had qualified for a government job at the Central
+                            Board
+                            of Indirect Taxes. It's his passion for making students realise their career.
+                        </li>
+                    </div>
+                </div>
+
+                <div class="faculty-card d-flex flex-column">
+                    <div class="d-flex flex-row faculty-content">
+                        <img src="./img/3.jpg" alt="">
+                        <div class="d-flex flex-column m-left">
+                            <h5>BHAGWATI PRASAD SIR</h5>
+                            <span class="Fs-10">M.phil, M.Sc, B.Ed</span>
+                            <span class="Fs-10">Quantitive Aptitude</span>
+                            <span class="Fs-10"><strong>20+ yeats of exp</strong></span>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <li class="Fs-12 justify"> Bhagwati Prasad Sir is a distinguished name in teaching
+                            Quantitative Aptitude. Sir himself had qualified for a government job at the Central
+                            Board
+                            of Indirect Taxes. It's his passion for making students realise their career.
+                        </li>
+                    </div>
+                </div>
+
+                <div class="faculty-card d-flex flex-column">
+                    <div class="d-flex flex-row faculty-content">
+                        <img src="./img/3.jpg" alt="">
+                        <div class="d-flex flex-column m-left">
+                            <h5>BHAGWATI PRASAD SIR</h5>
+                            <span class="Fs-10">M.phil, M.Sc, B.Ed</span>
+                            <span class="Fs-10">Quantitive Aptitude</span>
+                            <span class="Fs-10"><strong>20+ yeats of exp</strong></span>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <li class="Fs-12 justify"> Bhagwati Prasad Sir is a distinguished name in teaching
+                            Quantitative Aptitude. Sir himself had qualified for a government job at the Central
+                            Board
+                            of Indirect Taxes. It's his passion for making students realise their career.
+                        </li>
+                    </div>
+                </div>
+
+                <div class="faculty-card d-flex flex-column">
+                    <div class="d-flex flex-row faculty-content">
+                        <img src="./img/3.jpg" alt="">
+                        <div class="d-flex flex-column m-left">
+                            <h5>BHAGWATI PRASAD SIR</h5>
+                            <span class="Fs-10">M.phil, M.Sc, B.Ed</span>
+                            <span class="Fs-10">Quantitive Aptitude</span>
+                            <span class="Fs-10"><strong>20+ yeats of exp</strong></span>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <li class="Fs-12 justify"> Bhagwati Prasad Sir is a distinguished name in teaching
+                            Quantitative Aptitude. Sir himself had qualified for a government job at the Central
+                            Board
+                            of Indirect Taxes. It's his passion for making students realise their career.
+                        </li>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- GUIDE -->
+    <div class="container-fluid m-top ">
+        <div class="container">
+            <h3> Guide <button class="view-btn text-danger fs-6">View all</button></h3>
+            <div class="container scrollY d-flex flex-row">
+                <div class="guide-card">
+                    <img src="./img/guide1.jpeg" alt="">
+                    <span class="Fs-grey"> <strong> UP Board Admit Card For 10th <br> Check All Details Here
+                        </strong></span>
+                    <br> <br>
+                    <span class="Fs-12">This article covers all the information related to
+                        the admit card of class 10 UP Board exams 2022.</span>
+                    <br> <br> <br>
+                    <button class="guide-read-more Fs-12">Read More....</button>
+                </div>
+
+                <div class="guide-card">
+                    <img src="./img/guide2.jpeg" alt="">
+                    <span class="Fs-grey"> <strong> UP Board Admit Card For 10th <br> Check All Details Here
+                        </strong></span>
+                    <br> <br>
+                    <span class="Fs-12">This article covers all the information related to
+                        the admit card of class 10 UP Board exams 2022.</span>
+                    <br> <br> <br>
+                    <button class="guide-read-more Fs-12">Read More....</button>
+                </div>
+
+                <div class="guide-card">
+                    <img src="./img/guide3.jpeg" alt="">
+                    <span class="Fs-grey"> <strong> UP Board Admit Card For 10th <br> Check All Details Here
+                        </strong></span>
+                    <br> <br>
+                    <span class="Fs-12">This article covers all the information related to
+                        the admit card of class 10 UP Board exams 2022.</span>
+                    <br> <br> <br>
+                    <button class="guide-read-more Fs-12">Read More....</button>
+                </div>
+
+                <div class="guide-card">
+                    <img src="./img/guide4.jpeg" alt="">
+                    <span class="Fs-grey"> <strong> UP Board Admit Card For 10th <br> Check All Details Here
+                        </strong></span>
+                    <br> <br>
+                    <span class="Fs-12">This article covers all the information related to
+                        the admit card of class 10 UP Board exams 2022.</span>
+                    <br> <br> <br>
+                    <button class="guide-read-more Fs-12">Read More....</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FREE VIDEOS -->
+    <div class="container-fluid Bg-grey m-top">
+        <div class="container">
+            <h3>Free Videos <span class="text-danger fs-6">View all</span></h3>
+            <div class="scrollY free-videos container d-flex flex-row most-watched ">
+                <div class="child20"> <i class="far fa-play-circle"></i>
+                </div>
+                <div class="child21"> <i class="far fa-play-circle"></i>
+                </div>
+                <div class="child22"> <i class="far fa-play-circle"></i>
+                </div>
+                <div class="child23"> <i class="far fa-play-circle"></i>
+                </div>
+                <div class="child24"> <i class="far fa-play-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+    <!-- DOWNLOAD OUT APP -->
+    <div class="container-fluid m-top download-app">
+        <div class="container">
+            <div class="d-flex ">
+                <span>
+                    <h2 class="text-center">Download Our App</h2>
+                    <h5 class="Fs-grey fw-normal">Learn from your mobile Anytime Anywhere.</h5>
+                </span>
+                <img src="./img/gPlay.png" >
+            </div>
+
+            <div class="course-container container d-flex flex-row justify-content-around">
+                <div class="courses">
+                    <h4>Trending course</h4>
+                    <ul class="Fs-grey Fs-12">
+                        <li>UPSSSC Lekhpal Complete Course</li>
+                        <li>NDA Score Booster</li>
+                        <li>CTET Score Booster Course</li>
+                        <li> SSC GD Champion Batch</li>
+                        <li> UP POLICE(SI) Batch</li>
+                        <li>Safalta School</li>
+                    </ul>
+                </div>
+
+                <div class="courses">
+                    <h4>Exam information</h4>
+                    <ul class="Fs-grey Fs-12">
+                        <li>UPSSSC Lekhpal Complete Course</li>
+                        <li>NDA Score Booster</li>
+                        <li>CTET Score Booster Course</li>
+                        <li> SSC GD Champion Batch</li>
+                        <li> UP POLICE(SI) Batch</li>
+                        <li>Safalta School</li>
+                    </ul>
+                </div>
+
+                <div class="courses">
+                    <h4>Free E Books</h4>
+                    <ul class="Fs-grey Fs-12">
+                        <li>UPSSSC Lekhpal Complete Course</li>
+                        <li>NDA Score Booster</li>
+                        <li>CTET Score Booster Course</li>
+                        <li> SSC GD Champion Batch</li>
+                        <li> UP POLICE(SI) Batch</li>
+                        <li>Safalta School</li>
+                    </ul>
+                </div>
+
+                <div class="courses">
+                    <h4>Resources</h4>
+                    <ul class="Fs-grey Fs-12">
+                        <li>UPSSSC Lekhpal Complete Course</li>
+                        <li>NDA Score Booster</li>
+                        <li>CTET Score Booster Course</li>
+                        <li> SSC GD Champion Batch</li>
+                        <li> UP POLICE(SI) Batch</li>
+                        <li>Safalta School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- GIVE RESPONSE -->
+
+    <div class="container-fluid">
+        <div class="about container  d-flex justify-content-around">
+            <div class=" hiring d-flex flex-column">
+                <img src="./logo.svg">
+                <h4 class="Fs-grey">We are hiring, send us your resume at</h4>
+                <h4 class="text-danger">career@safalta.com</h4>
+            </div>
+
+            <div>
+                <h2>Get free counselling session</h2>
+                <input type="text" placeholder="Enter Mobile Number">
+                <button class="enter bg-danger text-light"> <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="about-link Fs-12 d-flex flex-row justify-content-around Fs-grey">
+            <span > About Us | Privacy | Contact Us | Terms and Conditions | Disclaimer | RSS Feeds | Sitemap | Important Information            </span>            
+            <span>© 2021-22 Safalta.com</span>
+        </div>
+
+    </div>
 
 
 
