@@ -538,7 +538,7 @@ nav{
 .whatsapp{
     position: fixed;
     bottom: 6rem;
-    right: 1rem;
+    right: 2.5rem;
     display: none;
 }
 
@@ -653,7 +653,7 @@ nav{
 
   .carousel-control-prev,
 .carousel-control-next{
-    top: 36%;
+    display: none !important;
 }
 
 }
@@ -664,12 +664,33 @@ nav{
     .logo-img {
         margin-left: -6rem;
     }
-    .carousel-control-prev, .carousel-control-next {
-        top: 31%;
-    }
+   
 
     .carousel-control-prev, .carousel-control-next {
-        margin-left: 2rem;
-        margin-right: 2rem;
+       display: none !important;
+    }
+
+    .whatsapp {
+        right: 2rem;
+        bottom: 4rem;
+    }
+    .free-ssc div {
+        min-width: 135px;
+    }
+
+    .job-alert{
+        overflow:hidden;
+    }
+    .logo-img {
+        margin-left: -3rem;
+        height: 75px;
+        width: 120px;
+    }
+
+    .nav-menu{
+        margin-left: -1rem;
+    }
+    .category{
+        margin-left: .5rem;
     }
 }
