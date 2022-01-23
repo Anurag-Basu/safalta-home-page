@@ -6,7 +6,7 @@ body{
     overflow-x: hidden;
 }
 .nav-menu{
-    margin-left: 6rem;
+    margin-left: 6%;
     font-size: 1.5rem;  
 }
 /* NAV BAR */
@@ -22,7 +22,7 @@ nav{
 .logo-img{
     height: 50px;
     width: 150px;
-    margin-left: -40rem;
+    margin-left: -24%;
 }
 .icon{
     height: 50px;
@@ -656,6 +656,13 @@ nav{
     display: none !important;
 }
 
+}
+
+@media only screen and (max-width: 720px){
+    .logo-img {
+        margin-left: -1rem;
+        
+    }
 }
 @media only screen and (max-width: 576px){
     .nav-menu {
