@@ -693,4 +693,17 @@ nav{
     .category{
         margin-left: .5rem;
     }
+    .offcanvas{
+        width: 60% !important;
+    }
+    #offcanvas{
+        display: inline-block !important;
+    }
+    .nav-pills li  a span{
+        display: inline-block !important;
+    }
+
+    .nav-pills li  a{
+        color: black;
+    }
 }
