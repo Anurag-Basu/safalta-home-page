@@ -524,12 +524,16 @@ nav{
 
 /* footer */
 .footer{
+    position: fixed;
+    bottom: 0;
     border-top: 1px solid #b5b5b5;
     padding-top: .5rem;
     font-size: 12px;
     box-shadow: 5px 2px 4px rgb(0 0 0 / 25%);
-    display: none;
+    display: none !important;
+    background-color: white
 }
+
 .footer span i{
     font-size: 20px;
 }
@@ -541,6 +545,22 @@ nav{
     right: 2.5rem;
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /* MEDIA QUERY FO 900px */
 @media only screen and (max-width: 992px){
@@ -661,7 +681,10 @@ nav{
 @media only screen and (max-width: 720px){
     .logo-img {
         margin-left: -1rem;
-        
+    }
+
+    .footer{
+        display: none !important;
     }
 }
 @media only screen and (max-width: 576px){
@@ -712,5 +735,9 @@ nav{
 
     .nav-pills li  a{
         color: black;
+    }
+
+    .footer{
+        display: flex !important;
     }
 }
